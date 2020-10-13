@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>survey</title>
+	<meta charset="UTF-8"/>
+	<style>
+	#title {
+	text-align: center;
+	}
+	#description {
+	text-align: center;
+	}
+	
+	form {
+		padding: 10px;
+		margin: auto;
+		max-width: 500px;
+		border: solid black 2px;
+	}
+	
+	</style>
+</head>
+<body>
+
+	<h1 id="title">survey</h1>
+	<p id="description">answer our questions to earn 0.15$</p>
+	<form id="survey-form" method="post" action="#">
+	
+		<label for="name" id="name-label">Your name:</label>
+		<input type="text" id="name" name="name" required placeholder="ex. Hubert">
+		<span style="color:red;">*</span><br>
+		
+		<label for="email" id="email-label">Your email:</label>
+		<input type="email" id="email" name="email" required placeholder="ex. hubert@hubert.hubert">
+		<span style="color:red;">*</span><br>
+		
+		<label for="number" id="number-label">If you're not shy give us your age:</label>
+		<input type="number" id="number" name="number" min="0" max="130" placeholder="[0-130]">
+		<br>
+	
+		<label for="gender">Sex:</label>
+		<select id="dropdown">
+		  <option value="male">Male</option>
+		  <option value="female">Female</option>
+		  <option value="unknown">???</option>
+		</select>
+		<br>
+		
+		<input type="radio" id="smoker" name="smoking" value="smoker">
+		<label for="smoker">Smoker</label>
+		<input type="radio" id="nonsmoker" name="smoking" value="nonsmoker" checked>
+		<label for="nonsmoker">Non smoker</label>
+		
+		<p>Do you have any of the following?</p>
+		
+		<input type="checkbox" id="headache" name="headache">
+		<label for="headache">Headache</label>
+		<input type="checkbox" id="chestpain" name="chestpain">
+		<label for="chestpain">Chest pain</label>
+		<br>
+		
+		<label for="comments">Suggestions for a better survey:</label><br>
+		<textarea id="comments" name="comments" rows="5" cols="33">We're aware this one is terrible.</textarea>
+
+		<button type="submit" id="submit">Submit</button>
+				
+	</form>
+
+</body>
+</html>
