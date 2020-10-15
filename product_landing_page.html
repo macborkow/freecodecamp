@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Amnesia Rebirth</title>
+	<meta charset="UTF-8"/>
+	<style>
+		body {
+			background-color: AntiqueWhite;
+		}
+		#header-img {
+			position: fixed;
+			max-width: 30%;
+			height: auto;
+			max-height: 100px;
+			right: 20px;
+		}
+		#header {
+			width: 100%;
+			height: 130px;
+			background-color: black;
+			color: white;
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 100;
+		}
+		#nav-bar {
+			display: inline-flex;
+			justify-content: left;
+			align-items: center;
+			flex-direction: row;
+			width: 65%;
+			height: 130px;
+			left: 30%;
+		}
+		#nav-bar > .nav-link {
+			color: white;
+			background-color: Chocolate;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+		}
+		#product-title {
+			padding-top: 130px;
+		}
+		
+		#read-more {
+			display: block;
+		}
+		
+		#video {
+			display: block;
+			width: 50%;
+			height: auto;
+		}
+		
+		@media only screen and (max-width: 900px) {
+			#video {
+				display: inline-block;
+				width: 30%;
+			}
+			#read-more {
+				display: inline-block;
+				width: 60%;
+			}
+		}
+	
+	</style>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+</head>
+<body>
+	<header id="header">
+		<img id="header-img" src="https://upload.wikimedia.org/wikipedia/en/a/ab/Frictional_Games.png" alt="Frictional Games logo">
+		<nav id="nav-bar">
+			<a class="nav-link" href="#read-more">Read more</a>
+			<a class="nav-link" href="#video">Watch trailer</a>
+			<a class="nav-link" href="#form">Subscribe for newsletter</a>
+		</nav>
+	</header>
+	
+	
+	<article id="read-more">
+		<h1 id="product-title">Amnesia Rebirth</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+		ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+		ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+		velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+		cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+		laborum.</p>
+	</article>
+	
+	<video id="video" width="320" height="240" controls>
+		<source src="trailer.mp4" type="video/mp4">
+		The video is missing somehow.
+	</video>
+	
+	<form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank" method="post">
+		<label for="email">Join our newsletter!</label><br>
+		<input type="email" id="email" name="email" placeholder="example@example.com">
+		<input type="submit" value="Join!" id="submit">
+	</form>
+	
+</body>
+</html>
