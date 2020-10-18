@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cat</title>
+	<meta charset="UTF-8"/>
+	<style>
+		#navbar {
+			position: fixed;
+			display: flex;
+			flex-direction: row;
+			bottom: 0px;
+			left: 0px;
+			height: 10%;
+			border: 3px solid black;
+			width: 100%;
+			background-color: white;
+			align-items: center;
+		}
+		p::after {
+			content: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+		}
+		header {
+			font-size: 20px;
+			font-weight: 900;
+		}
+		.nav-link {
+			padding: 10px;
+		}
+		@media only screen and (min-width: 768px) {
+
+		#navbar {
+			flex-direction: column;
+			top: 0px;
+			height: 100%;
+			width: auto;
+			align-items: flex-start;
+		}
+
+		#main-doc {
+			margin-left: 100px;
+		}
+
+		}
+	</style>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+</head>
+<body>
+	<main id="main-doc">
+		<section class="main-section" id="introduction">
+			<header>Introduction</header>
+			<p>Cats are pretty cool.</p>
+			<p>They're <code>quadrupedal</code> mammal predators.</p>
+		</section>
+		<section class="main-section" id="feeding">
+			<header>Feeding</header>
+			<p>Don't forget to feed your cat.</p>
+			<p>Cats enjoy:</p>
+			<ul>
+				<li>Fish</li>
+				<li><code>Yoghurt</code></li>
+				<li>Other cats</li>
+				<li>McNuggets</li>
+				<li>Milkshakes</li>
+			</ul>
+		</section>
+		<section class="main-section" id="bathing">
+			<header>Bathing</header>
+			<p>Don't forget to bathe your cat.</p>
+			<p>Make sure to use special <code>soap</code> for cats.</p>
+		</section>
+		<section class="main-section" id="training">
+			<header>Training</header>
+			<p>Cats are pretty tough to train.</p>
+			<p>Better forget about it and watch some <code>Netflix</code>.</p>
+		</section>
+		<section class="main-section" id="trivia">
+			<header>Trivia</header>
+			<p>Cats have 230 bones.</p>
+			<p>Cats tongues have lots of <code>spiky thingies</code>.</p>
+		</section>
+	</main>
+	<nav id="navbar">
+		<header>Cats.</header>
+		<a href="#introduction" class="nav-link">Introduction</a>
+		<a href="#feeding" class="nav-link">Feeding</a>
+		<a href="#bathing" class="nav-link">Bathing</a>
+		<a href="#training" class="nav-link">Training</a>
+		<a href="#trivia" class="nav-link">Trivia</a>
+	</nav>
+</body>
+</html>
