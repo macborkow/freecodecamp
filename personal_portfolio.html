@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Maciej Borkowski</title>
+	<meta charset="UTF-8"/>
+	<style>
+		* {
+		margin: 0;
+		padding: 0;
+		font-family: Lucida Console, monospace;
+		}
+		#welcome-section {
+			display: flex;
+			height: 100vh;
+			text-align: center;
+			position: relative;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: ghostwhite;
+			background-color: peru;
+		}
+		#welcome-section h1 {
+			font-size: 8vw;
+		}
+		#welcome-section h2 {
+			font-size: 5vw;
+		}
+		#projects {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.project-tile {
+			display: flex;
+			background-color: peru;
+			width: 96vw;
+			height: 20vh;
+			margin: 2vh;
+			align-items: center;
+			justify-content: center;
+			border-radius: 1vh;
+		}
+		.project-tile a {
+			font-size:calc(8px + 0.8vw);
+			color: white;
+			padding: 1vh;
+			border-radius: 1vh;
+		}
+		#contact {
+			display: flex;
+			background-color: peru;
+			font-size:calc(8px + 0.8vw);
+			height: 15vh;
+			align-items: center;
+			justify-content: center;
+		}
+		#profile-link {
+			color: peru;
+			background-color: white;
+			padding: 3vh;
+			border-radius: 1vh;
+		}
+		#navbar {
+			position: fixed;
+			display: flex;
+			top: 0;
+			left: 0;
+			border: 3px solid black;
+			background-color: white;
+			width: 100%;
+			justify-content: center;
+		}
+		#navbar a {
+			padding: 0 5vh;
+			color: black;
+		}
+		
+		@media only screen and (min-width: 768px) {
+			.project-tile {
+				width: 28vw;
+				height: 60vh;
+			}
+		}
+		
+	</style>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+</head>
+<body>
+	<header id="welcome-section">
+		<h1>Maciej Borkowski...</h1>
+		<h2>...and his mediocre portfolio</h2>
+	</header>
+	<section id="projects">
+		<div class="project-tile">
+			<a target="_blank" href="https://github.com/macborkow/freecodecamp
+			/blob/main/product_landing_page.html">Product landing</a>
+		</div>
+		<div class="project-tile">
+			<a target="_blank" href="https://github.com/macborkow/freecodecamp
+			/blob/main/survey_form.html">Survey form</a>
+		</div>
+		<div class="project-tile">
+			<a target="_blank" href="https://github.com/macborkow/freecodecamp
+			/blob/main/technical_documentation_page.html">Technical documentation</a>
+		</div>
+		<div class="project-tile">
+			<a target="_blank" href="https://github.com/macborkow/freecodecamp
+			/blob/main/tribute_page.html">Tribute</a>
+		</div>
+	</section>
+	<section id="contact">
+		<a target="_blank" href="https://github.com/macborkow/"
+		id="profile-link">My profile</a>
+	</section>
+	<nav id="navbar">
+		<a href="#welcome-section">Jump up</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+	</nav>
+</body>
+</html>
